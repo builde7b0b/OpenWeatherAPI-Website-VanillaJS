@@ -60,7 +60,7 @@ form.addEventListener("submit", e => {
 
 
   //
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?zip=${inputVal},us&appid=${apiKey}&units=metric`;
 
   fetch(url)
     .then(response => response.json())
